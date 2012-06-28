@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import ljr.Watcher.entity.TrustEntity;
 import ljr.Watcher.manager.TrustManager;
-import ljr.watcher.entity.TrustEntity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.SimpleAdapter;

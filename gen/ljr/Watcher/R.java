@@ -26,6 +26,7 @@ public final class R {
         public static final int time=0x7f050007;
         public static final int tips=0x7f050001;
         public static final int title=0x7f05000b;
+        public static final int toast_layout=0x7f05000c;
     }
     public static final class layout {
         public static final int add_trust_layout=0x7f030000;
@@ -38,7 +39,8 @@ public final class R {
         public static final int setting_info_layout=0x7f030007;
         public static final int setting_layout=0x7f030008;
         public static final int tab_layout=0x7f030009;
-        public static final int trust_tab_layout=0x7f03000a;
+        public static final int toast_layout=0x7f03000a;
+        public static final int trust_tab_layout=0x7f03000b;
     }
     public static final class string {
         public static final int app_name=0x7f040001;

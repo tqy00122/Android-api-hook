@@ -2,10 +2,10 @@ package ljr.Watcher.manager;
 
 import java.util.ArrayList;
 
+import ljr.Watcher.db.DbHelper;
+import ljr.Watcher.entity.TrustEntity;
 import ljr.Watcher.metadata.TrustMetadata;
 import ljr.Watcher.metadata.WatcherListMetadata;
-import ljr.Wathcer.db.DbHelper;
-import ljr.watcher.entity.TrustEntity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

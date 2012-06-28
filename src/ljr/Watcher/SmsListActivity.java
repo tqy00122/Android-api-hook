@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import ljr.Watcher.entity.WatcherListEntity;
 import ljr.Watcher.manager.WatcherListManager;
-import ljr.watcher.entity.WatcherListEntity;
 
 import android.app.ListActivity;
 import android.os.Bundle;
