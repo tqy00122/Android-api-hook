@@ -14,19 +14,23 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int confirm=0x7f050005;
-        public static final int content=0x7f050000;
-        public static final int des=0x7f050002;
-        public static final int hint=0x7f050004;
-        public static final int number=0x7f05000a;
-        public static final int setting=0x7f050006;
-        public static final int start=0x7f050008;
-        public static final int stop=0x7f050009;
-        public static final int text=0x7f050003;
-        public static final int time=0x7f050007;
-        public static final int tips=0x7f050001;
-        public static final int title=0x7f05000b;
-        public static final int toast_layout=0x7f05000c;
+        public static final int add_content=0x7f050001;
+        public static final int cancel_bt=0x7f050003;
+        public static final int confirm=0x7f050009;
+        public static final int confirm_bt=0x7f050002;
+        public static final int content=0x7f050004;
+        public static final int des=0x7f050006;
+        public static final int hint=0x7f050008;
+        public static final int number=0x7f05000e;
+        public static final int setting=0x7f05000a;
+        public static final int spinner=0x7f050000;
+        public static final int start=0x7f05000c;
+        public static final int stop=0x7f05000d;
+        public static final int text=0x7f050007;
+        public static final int time=0x7f05000b;
+        public static final int tips=0x7f050005;
+        public static final int title=0x7f05000f;
+        public static final int toast_layout=0x7f050010;
     }
     public static final class layout {
         public static final int add_trust_layout=0x7f030000;
