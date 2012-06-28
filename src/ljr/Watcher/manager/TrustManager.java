@@ -34,7 +34,7 @@ public class TrustManager {
 	// query
 	public ArrayList<TrustEntity> query(String selection, String[] selectionArgs) {
 		SQLiteDatabase db = dbHelper.getReadableDatabase();
-		Cursor cursor = db.query(WatcherListMetadata.TABLE_NAME, null, selection,
+		Cursor cursor = db.query(TrustMetadata.TABLE_NAME, null, selection,
 				selectionArgs, null, null, null);
 
 		ArrayList<TrustEntity> booksInfo = new ArrayList<TrustEntity>();
@@ -53,11 +53,11 @@ public class TrustManager {
 	}
 
 	// insert
-	public long insert(String time, String des, String text) {
+	public long insert(int type, String content) {
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		ContentValues cv = new ContentValues();
-		cv.put(TrustMetadata.TYPE, time);
-		cv.put(TrustMetadata.CONTENT, des);
+		cv.put(TrustMetadata.TYPE, type);
+		cv.put(TrustMetadata.CONTENT, content);
 		
 		long row = db.insert(TrustMetadata.TABLE_NAME, null, cv);
 		return row;

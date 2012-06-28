@@ -71,7 +71,7 @@ public class SmsWatcherService extends IntentService {
 				
 				Bundle bundle = new Bundle();
 				bundle.putString("des", infoArray[1]);
-				bundle.putString("test", infoArray[2]);
+				bundle.putString("text", infoArray[2]);
 				Intent toDialog = new Intent(SmsWatcherService.this, DialogActivity.class);
 				toDialog.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				toDialog.putExtras(bundle);

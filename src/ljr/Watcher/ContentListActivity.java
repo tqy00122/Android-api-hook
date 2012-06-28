@@ -7,8 +7,13 @@ import java.util.List;
 import ljr.Watcher.entity.TrustEntity;
 import ljr.Watcher.manager.TrustManager;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class ContentListActivity extends ListActivity {
 	@Override
@@ -17,7 +22,7 @@ public class ContentListActivity extends ListActivity {
 
 		setContentView(R.layout.list_layout);
 
-		List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		final List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
 
 		ArrayList<TrustEntity> result = mTrustManager.query(null, null);
 		for (int i = 0; i < result.size(); i++) {
@@ -31,10 +36,20 @@ public class ContentListActivity extends ListActivity {
 		}
 
 		SimpleAdapter listAdapter = new SimpleAdapter(this, list,
-				R.layout.list_info_layout, new String[] { "content" },
+				R.layout.content_info_layout, new String[] { "content" },
 				new int[] { R.id.content });
 
 		this.setListAdapter(listAdapter);
+		
+		ListView lv = getListView();
+		lv.setOnItemClickListener(new OnItemClickListener(){
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Intent toRemove = new Intent(ContentListActivity.this, ListRemoveDialog.class);
+				toRemove.putExtra("Content", list.get(arg2).get("content"));
+				startActivity(toRemove);
+			}		
+		});
 	}
 
 	private final int TYPE_CONTENT = 2;

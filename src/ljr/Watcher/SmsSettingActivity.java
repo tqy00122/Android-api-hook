@@ -58,7 +58,8 @@ public class SmsSettingActivity extends ListActivity {
 				}
 				
 				if (arg2 == 2){
-					
+					Intent toImport = new Intent(SmsSettingActivity.this, ImportContactActivity.class);
+					startActivity(toImport);
 				}
 			}		
 		});
