@@ -10,7 +10,11 @@ import android.util.Log;
 
 /**
  * @author liujierui
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> origin/master
  */
 public class DbHelper extends SQLiteOpenHelper {
 	public static final String TAG = DbHelper.class.getSimpleName();
@@ -23,20 +27,38 @@ public class DbHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL("CREATE TABLE " + WatcherListMetadata.TABLE_NAME + "("
+<<<<<<< HEAD
 				+ WatcherListMetadata._ID
 				+ " INTEGER PRIMARY KEY AUTOINCREMENT, "
+=======
+				+ WatcherListMetadata._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+>>>>>>> origin/master
 				+ WatcherListMetadata.TIME + " TEXT, "
 				+ WatcherListMetadata.DES + " TEXT, "
 				+ WatcherListMetadata.TEXT + " TEXT);");
 
+<<<<<<< HEAD
 		db.execSQL("CREATE TABLE " + TrustMetadata.TABLE_NAME + "("
 				+ TrustMetadata._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
 				+ TrustMetadata.TYPE + " INTEGER, " + TrustMetadata.CONTENT
 				+ " TEXT);");
+=======
+		// 创建Income表
+		db.execSQL("CREATE TABLE " + TrustMetadata.TABLE_NAME + "("
+				+ TrustMetadata._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+				+ TrustMetadata.TYPE + " INTEGER, "
+				+ TrustMetadata.CONTENT + " TEXT);");
+>>>>>>> origin/master
 
 		initDatabase(db);
 	}
 
+<<<<<<< HEAD
+=======
+	/**
+	 * 初始化
+	 */
+>>>>>>> origin/master
 	private void initDatabase(SQLiteDatabase db) {
 
 	}

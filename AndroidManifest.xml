@@ -31,8 +31,13 @@
         <activity android:name=".DialogActivity" android:theme="@android:style/Theme.Dialog"/>
         <service android:enabled="true" android:name=".SmsWatcherService" />
     </application>
+<<<<<<< HEAD
     
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     
+=======
+	
+    <uses-permission android:name="android.permission.READ_LOGS" />
+>>>>>>> origin/master
 </manifest>
