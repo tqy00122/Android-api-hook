@@ -1,5 +1,9 @@
 package ljr.Watcher.metadata;
 
+/**
+ * @author liujierui
+ *
+ */
 public class DbMetadata {
 	/**
 	 * 数据库名称 WaCao.db

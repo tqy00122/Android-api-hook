@@ -12,6 +12,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+/**
+ * @author liujierui
+ * 
+ */
 public class AddTrustDialog extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -15,30 +15,45 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 
+/**
+ * @author liujierui
+ *
+ */
 public class ContentListActivity extends ListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.list_layout);
+		
+		showList();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		
+		showList();
+	}
 
+	private void showList(){
 		final List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
-
+		
 		ArrayList<TrustEntity> result = mTrustManager.query(null, null);
 		for (int i = 0; i < result.size(); i++) {
 			if (result.get(i).getType() == TYPE_CONTENT) {
 				HashMap<String, String> map = new HashMap<String, String>();
-
+				
 				map.put("content", result.get(i).getContent());
-
+				
 				list.add(map);
 			}
 		}
-
+		
 		SimpleAdapter listAdapter = new SimpleAdapter(this, list,
 				R.layout.content_info_layout, new String[] { "content" },
 				new int[] { R.id.content });
-
+		
 		this.setListAdapter(listAdapter);
 		
 		ListView lv = getListView();
@@ -49,7 +64,7 @@ public class ContentListActivity extends ListActivity {
 				toRemove.putExtra("Content", list.get(arg2).get("content"));
 				startActivity(toRemove);
 			}		
-		});
+		});		
 	}
 
 	private final int TYPE_CONTENT = 2;

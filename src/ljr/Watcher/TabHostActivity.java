@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.TabHost;
 
+/**
+ * @author liujierui
+ *
+ */
 public class TabHostActivity extends TabActivity {
 	private TabHost tabHost = null;
 	

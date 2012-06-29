@@ -9,6 +9,10 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 
+/**
+ * @author liujierui
+ *
+ */
 public class ListRemoveDialog extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

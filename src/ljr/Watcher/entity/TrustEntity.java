@@ -1,5 +1,9 @@
 package ljr.Watcher.entity;
 
+/**
+ * @author liujierui
+ *
+ */
 public class TrustEntity {
 	private int mID;
 	private int mType;

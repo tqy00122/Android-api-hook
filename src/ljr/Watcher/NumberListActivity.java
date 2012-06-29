@@ -15,6 +15,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+/**
+ * @author liujierui
+ *
+ */
 public class NumberListActivity extends ListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,17 @@ public class NumberListActivity extends ListActivity {
 
 		setContentView(R.layout.list_layout);
 
+		showList();
+	}
+		
+	@Override
+	protected void onResume() {
+		super.onResume();
+		
+		showList();
+	}
+
+	private void showList(){
 		final List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
 
 		ArrayList<TrustEntity> result = mTrustManager.query(null, null);

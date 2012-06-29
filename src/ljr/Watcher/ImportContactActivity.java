@@ -6,6 +6,10 @@ import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
 
+/**
+ * @author xuhe
+ *
+ */
 public class ImportContactActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

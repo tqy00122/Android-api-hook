@@ -1,5 +1,9 @@
 package ljr.Watcher.entity;
 
+/**
+ * @author liujierui
+ *
+ */
 public class WatcherListEntity {
 	private int mID;
 	private String mTime;

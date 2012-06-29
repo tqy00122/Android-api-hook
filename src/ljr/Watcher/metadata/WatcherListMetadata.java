@@ -2,6 +2,10 @@ package ljr.Watcher.metadata;
 
 import android.provider.BaseColumns;
 
+/**
+ * @author liujierui
+ *
+ */
 public class WatcherListMetadata implements BaseColumns{
 	private WatcherListMetadata(){
 	}

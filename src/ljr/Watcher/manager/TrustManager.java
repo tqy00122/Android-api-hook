@@ -11,6 +11,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+/**
+ * @author liujierui
+ *
+ */
 public class TrustManager {
 	private static TrustManager sInstance = null;
 	private DbHelper dbHelper = null;

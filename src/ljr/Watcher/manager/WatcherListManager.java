@@ -10,6 +10,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+/**
+ * @author liujierui
+ *
+ */
 public class WatcherListManager {
 	private static WatcherListManager sInstance = null;
 	private DbHelper dbHelper = null;
