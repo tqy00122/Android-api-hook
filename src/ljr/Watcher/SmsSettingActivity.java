@@ -121,7 +121,12 @@ public class SmsSettingActivity extends ListActivity {
 		}
 
 		for (int i = 0; i < mNumList.size(); i++) {
-			mTrustManager.insert(1, mNumList.get(i));
+			String number = "";
+			String[] tempNumArray = mNumList.get(i).split("-");
+			for (int j = 0; j < tempNumArray.length; j++){
+				number += tempNumArray[j];
+			}
+			mTrustManager.insert(1, number);
 		}
 
 		Toast.makeText(SmsSettingActivity.this, "Import contacts completed",
